@@ -1,0 +1,175 @@
+.nav-link{
+    color:black;
+}
+.navbar-brand
+{
+    color:black; 
+}
+.fixed-top.scrolled {
+    /* background-color: #222324 !important; */
+    /* background-color: #3b5998 !important;
+    background-color: #88a2db !important; */
+     /* background: linear-gradient(#3b5998,#88a2db);  */
+    /* background: linear-gradient(#222324,#c6cace); */
+    /* background-color: #00aced !important; */
+    background-color: rgb(49, 49, 233) !important;
+    transition: background-color 100ms linear;
+  }
+  .header-img{
+      background-image: url("../images/mosque1.jpg");
+       /* background-attachment: fixed; */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height:1000px;
+     
+  }
+  form label{
+      color: white;
+  }
+  .header{
+        position:absolute; 
+        left: 120px;
+        top:150px;
+        display:inline-block;
+        z-index:10
+    }
+    form input{
+        opacity: 1;
+    }
+  
+  /* .navigation-bar
+  {
+      background-color: #00aced;
+  } */
+  .top-contact li
+  {
+    color: #00aced;
+  }
+  .nav-link {
+    color: black;
+    transition: color 100ms linear;
+  }
+  .fa-bars{
+      color:black;
+  }
+  body.modal-open {
+    overflow: auto;
+}
+body.modal-open[style] {
+    padding-right: 0px !important;
+}
+
+.modal::-webkit-scrollbar {
+    width: 0 !important; 
+}             
+.modal-title{
+    color:black;
+}
+.nav-link:hover{
+    color: black;
+}
+.nav-link:hover{
+    color:white !important;
+}
+.fa-female,.fa-clock-o,.fa-money,.fa-user-o,.fa-language,.fa-globe{
+    color:#0275d8;
+    color: #00aced;
+}
+.parallax{
+     background-image: url("../images/mosque1.jpg");
+
+     min-height: 406px; 
+ 
+     /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+ /* .container-fluid {
+     padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto
+ }  */
+ .parallax h3{
+     color: white;
+     text-align: center;
+ }
+.carousel-item.active {
+    display:block;
+}
+.carousel-indicators {
+    bottom:-80px;
+  }
+  /* .carousel-inner {
+    margin-bottom:50px;
+ } */
+  ul{
+      list-style-type: none;
+  }
+  li a{
+      text-decoration: none !important;
+  }
+  .fa-youtube{
+      color:#bb0000;
+
+  }
+  .fa-twitter{
+      color: #00aced; 
+  }
+  .fa-facebook{
+      color: #3b5998;
+  }
+  .fa-google-plus
+  {
+      color: #dd4b39;
+  }
+  .footer{
+       background-color: #222324;
+      padding-top: 60px;
+      background-image: url("../images/worldmap.png");
+       background-position: right;
+     background-repeat: no-repeat;
+
+  }
+  hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0px;
+    border-style: solid;
+    border-width: 1px;
+    color:rgba(255, 255, 255, 0.1);
+    
+} 
+.bottom li a{
+    color: white !important;
+    font-size: 14px;
+}
+.copyright{
+    color: white !important;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.contact li{
+    color: white;
+    font-size: 14px;
+}
+.join-us{
+font-weight: 100 !important;
+font-family: Montserrat;
+line-height: 1.2;
+color: #242424;
+ font-size: 2.25rem !important; 
+/* text-transform: capitalize; */
+}
+.carousel-content p{
+color: white;
+font-style: italic;
+font-weight: bold;
+}
+.carousel-content h6 {
+    color: white;
+}
