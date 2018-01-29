@@ -1,5 +1,5 @@
 .nav-link{
-    color:black;
+    color:white !important;
 }
 .navbar-brand
 {
@@ -24,6 +24,9 @@
       min-height:1000px;
      
   }
+  hr {
+      color: white !important;
+  }
   form label{
       color: white;
   }
@@ -34,8 +37,26 @@
         display:inline-block;
         z-index:10
     }
-    form input{
-        opacity: 1;
+     input{
+        background-color:transparent !important;
+        border:none !important; 
+        color: white !important;
+    }
+    form 
+    {
+        background-color: rgba(100, 4, 4, 0.2);
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color:white !important;
+        opacity: 1; /* Firefox */
+    }
+    
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: white;
+    }
+    
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: white;
     }
   
   /* .navigation-bar
