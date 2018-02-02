@@ -1,10 +1,15 @@
-.nav-link{
-    color:white !important;
+body {
+    font: 400 15px/1.5 "Roboto Slab","Montserrat","Iosevka","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Roboto Slab", "Montserrat, Iosevka", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #111;
+}
+/* .nav-link{
+    color:black !important;
 }
 .navbar-brand
 {
-    color:black; 
-}
+    color:black !important; 
+} */
 .fixed-top.scrolled {
     /* background-color: #222324 !important; */
     /* background-color: #3b5998 !important;
@@ -12,67 +17,62 @@
      /* background: linear-gradient(#3b5998,#88a2db);  */
     /* background: linear-gradient(#222324,#c6cace); */
     /* background-color: #00aced !important; */
-    background-color: rgb(49, 49, 233) !important;
+    /* background-color: rgb(49, 49, 233) !important; */
     transition: background-color 100ms linear;
   }
   .header-img{
-      background-image: url("../images/mosque1.jpg");
-       /* background-attachment: fixed; */
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      min-height:1000px;
+      background-image: url("../images/kid-contact1.jpg");
+    background-repeat:no-repeat;
+     background-size:100% auto;
+     /* background-position:center center; */
+   
      
   }
   hr {
       color: white !important;
   }
-  form label{
+  #header-form label{
       color: white;
   }
-  .header{
-        position:absolute; 
-        left: 120px;
-        top:150px;
-        display:inline-block;
-        z-index:10
-    }
-     input{
+     #header-form input{
         background-color:transparent !important;
         border:none !important; 
         color: white !important;
+        box-shadow: none !important;
     }
-    form 
+    #header-form 
     {
-        background-color: rgba(100, 4, 4, 0.2);
+        background-color: rgba(66, 4, 236, 0.72);
     }
-    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    #header-form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         color:white !important;
         opacity: 1; /* Firefox */
     }
     
-    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    #header-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
         color: white;
     }
     
-    ::-ms-input-placeholder { /* Microsoft Edge */
+    #header-form ::-ms-input-placeholder { /* Microsoft Edge */
         color: white;
     }
   
-  /* .navigation-bar
+ .navigation-bar
   {
       background-color: #00aced;
-  } */
+      background-color: rgba(66, 4, 236, 0.82);
+      background-color:rgba(66, 4, 236, 0.92);
+      
+  }
   .top-contact li
   {
     color: #00aced;
   }
   .nav-link {
     color: black;
-    transition: color 100ms linear;
   }
   .fa-bars{
-      color:black;
+      color:white;
   }
   body.modal-open {
     overflow: auto;
@@ -88,17 +88,17 @@ body.modal-open[style] {
     color:black;
 }
 .nav-link:hover{
-    color: black;
+    color:black;
 }
-.nav-link:hover{
-    color:white !important;
-}
+
 .fa-female,.fa-clock-o,.fa-money,.fa-user-o,.fa-language,.fa-globe{
-    color:#0275d8;
-    color: #00aced;
+    /* color:#0275d8;
+    color: #00aced; */
+    color: rgba(66, 4, 236, 0.92);
 }
+
 .parallax{
-     background-image: url("../images/mosque1.jpg");
+      background-image: url("../images/paper2.jpg");
 
      min-height: 406px; 
  
@@ -115,8 +115,11 @@ body.modal-open[style] {
     margin-left:auto
  }  */
  .parallax h3{
-     color: white;
+     color: black;
      text-align: center;
+ }
+ .testimonial q{
+     color: black;
  }
 .carousel-item.active {
     display:block;
@@ -140,6 +143,9 @@ body.modal-open[style] {
   .fa-twitter{
       color: #00aced; 
   }
+  .fa-skype{
+      color:#00aff0;
+  }
   .fa-facebook{
       color: #3b5998;
   }
@@ -149,8 +155,10 @@ body.modal-open[style] {
   }
   .footer{
        background-color: #222324;
+       background-color: rgba(91, 34, 248,1);
+       background-color:rgba(66, 4, 236, 0.92);
       padding-top: 60px;
-      background-image: url("../images/worldmap.png");
+      background-image: url("../images/pencil.png");
        background-position: right;
      background-repeat: no-repeat;
 
@@ -175,12 +183,11 @@ body.modal-open[style] {
     font-size: 13px;
 }
 .contact li{
-    color: white;
+    color: black;
     font-size: 14px;
 }
 .join-us{
 font-weight: 100 !important;
-font-family: Montserrat;
 line-height: 1.2;
 color: #242424;
  font-size: 2.25rem !important; 
@@ -189,8 +196,34 @@ color: #242424;
 .carousel-content p{
 color: white;
 font-style: italic;
-font-weight: bold;
+/* font-weight: bold; */
 }
 .carousel-content h6 {
+    color: black;
+}
+.fa-angle-double-down
+{
     color: white;
+}
+.fa-angle-double-down:hover{
+    color: black;
+}
+/* modal form*/
+.modal-header{
+    background-color:rgba(66, 4, 236, 0.92);
+}
+.modal-title{
+    color:white;
+}
+
+/* about us */
+.bullets {
+    list-style-type: circle !important;
+    color: black;
+}
+
+/* courses */
+.course-description{
+    padding-top:20px;
+    padding-bottom:20px;
 }
