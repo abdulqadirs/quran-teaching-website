@@ -22,16 +22,8 @@
         <link rel="stylesheet" href="css/header.css" />
         <!-- jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            $(function () {
-                $(document).scroll(function () {
-                    var $nav = $(".fixed-top");
-                    var $links = $(".nav-link");
-                    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-                    $links.toggleClass('color', $(this).scrollTop() > $nav.height());
-                });
-            });
-        </script>
+        <!-- fee.js -->
+        <script src="fee.js"></script>
     </head>
 
     <body>
@@ -101,7 +93,7 @@
                             <h1>Fee</h1>
                         </li>
                         <li>
-                            <a href="#courses">
+                            <a href="#fee">
                                 <span class="fa fa-angle-double-down fa-3x pl-4"></span>
                             </a>
                         </li>
@@ -113,71 +105,84 @@
         <br>
 
 
-        <div class="container">
+        <div class="container" id="fee">
             <div class="row">
                 <div class="offset-md-3 col-12 col-md-9">
                     <table class="table table-striped table-responsive">
                         <thread>
-                        <tr style="background-color:rgba(66, 4, 236, 0.92);">
-                            <th class="text-center text-white" colspan="4">Monthly Fee for USA</th>
-                        </tr>
-                        <!-- </thread> -->
-                        <!-- <thead class="text-white" style="background-color:rgba(66, 4, 236, 0.92);"> -->
+                            <tr style="background-color:rgba(66, 4, 236, 0.92);">
+                                <th id="top-heading" class="text-center text-white" colspan="4">Monthly Fee for USA & Canada</th>
+                            </tr>
+                            <!-- </thread> -->
+                            <!-- <thead class="text-white" style="background-color:rgba(66, 4, 236, 0.92);"> -->
                             <tr>
-                                <th>Days</th>
+                                <th>Days/Week</th>
                                 <th>Duration</th>
                                 <th>Total Classes in Month</th>
                                 <th>Monthly Fee</th>
                             </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td scope="row">3</td>
-                                <td>30 min</td>
-                                <td>12</td>
-                                <td>$25</td>
-                            </tr>
-                            <tr>
-                                <td scope="row">6</td>
-                                <td>30 min</td>
-                                <td>24</td>
-                                <td>$35</td>
-                            </tr>
-                            <tr>
-                                <td scope="row">Sat-Sun</td>
-                                <td>30 min</td>
-                                <td>8</td>
-                                <td>$55</td>
-                            </tr>
-                        </tbody>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">2</td>
+                                    <td>30 min</td>
+                                    <td>12</td>
+                                    <td id="twodays">$25</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">3</td>
+                                    <td>30 min</td>
+                                    <td>24</td>
+                                    <td id="threedays">$35</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">5</td>
+                                    <td>30 min</td>
+                                    <td>8</td>
+                                    <td id="fivedays">$55</td>
+                                </tr>
+                            </tbody>
                     </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-md-3 col-12 col-md-9">
+                    <label>
+                        <h6>Select Country: </h6>
+                    </label>
+                    <select id="selectcurrency" onchange="selection()">
+                        <option value="usa" selected>USA & Canada</option>
+                        <option value="uk">UK</option>
+                        <option value="europe">Europe</option>
+
+                    </select>
                 </div>
             </div>
         </div>
         <br>
         <div class="container">
-                <div class="row">
-                    <div class="offset-md-3 col-12 col-md-9">
-                        <ul class="bullets">
-                            <li>
-                                The above mentioned cost is exclusive of First Week's Free Trial Classes
-                            </li>
-                            <li>
-                                We don't accept donation from any organization or person.
-                            </li>
-                            <li>
-                                We are running institution on a small fee that is received from students.
-                            </li>
-                            <li>
-                                Lowest possible fee starting at $25 per month in USA and £15 in UK
-                            </li>
-                            <li>
-                                10% discount on second student.
-                            </li>
-                        </ul>
-                    </div>
+            <div class="row">
+                <div class="offset-md-3 col-12 col-md-9">
+                    <ul class="bullets">
+                        <li>
+                            The above mentioned cost is exclusive of First Week's Free Trial Classes.
+                        </li>
+                        <li>
+                            We don't accept donation from any organization or person.
+                        </li>
+                        <li>
+                            We are running institution on a small fee that is received from students.
+                        </li>
+                        <li>
+                            Lowest possible fee starting at $25 per month in USA and £15 in UK.
+                        </li>
+                        <li>
+                            10% discount on second student.
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
         <br>
         <br <!-- footer -->
         <div class="container-fluid bg-light border border-default border-bottom-0 border-right-0 border-left-0 footer">
