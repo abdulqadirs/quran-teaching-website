@@ -227,3 +227,9 @@ font-style: italic;
     padding-top:20px;
     padding-bottom:20px;
 }
+
+/* faqs */
+
+.question{
+    cursor: pointer;
+}
