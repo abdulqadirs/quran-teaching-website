@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Read Quran</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto+Slab" rel="stylesheet">
+    <!-- font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous">
+    <!-- bootstrap cdn links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"></script>
+    <!-- css for header -->
+    <link rel="stylesheet" href="css/header.css" />
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".fixed-top");
+          var $links = $(".nav-link");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+          $links.toggleClass('color', $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+      <!-- <nav class="navbar  navbar-toggleable-md">  -->
+     <div class="container-fluid" >
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <img src="images/logo.png" class="img-fluid" width="250px" height="160px">
+        </div>
+        <div class="col-xs-1 col-sm-4 col-md-4"></div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <ul class="top-contact" style="margin-top:20px">
+            <b><li style="color:black">  <span class="fa fa-registered fa-lg "></span>US Florida</li></b>
+            <li style="color:black">G10000064235</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+     <!-- </nav>  -->
+     <nav class="navbar navbar-toggleable-md navigation-bar  navbar-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+      </button> 
+      <h1  class="navbar-brand"></h1>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link active" href="index.php">Home</a>
+            <span class="sr-only">(current)</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.php">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.php">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fee.php">Fee</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lectures.php">Lectures</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="readquran.php">Read Quran</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faqs.php">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.php">Contact us</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">1 Week Free Trial</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="fa fa-times"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="modalform">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="text" class="form-control" id="inputname" aria-describedby="emailHelp" placeholder="Enter name" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Email</label>
+                <input type="email" class="form-control" id="inputemail" placeholder="Enter email" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Phone</label>
+                <input type="tel" class="form-control" id="inputphone" placeholder="Enter phone no">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-outline-success" form="modalform">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header image -->
+     <!-- <div class="header-img img-fluid"></div>  -->
+    <!-- registration form -->
+    <div class="container-fluid header-img">
+      <div class="row">
+        <div class="col-12 col-md-8" >
+        </div>
+        <div class="col-12 col-md-4">
+          <form id="header-form">
+            <div class="text-center">
+              <h3 class="text-white">
+                <i class=" text-white"></i>Start 1 Week Free Trail</h3>
+              <hr class="hr-light">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputname" placeholder="&#xf007;     Name" style="font-family:Arial, FontAwesome"
+                required>
+              <hr style="width:75%">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="inputemail" placeholder="&#xf0e0;    Email" style="font-family:Arial, FontAwesome"
+                required>
+              <hr style="width:75%;">
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control" id="inputphone" placeholder="&#xf095;      Phone" style="font-family:Arial, FontAwesome"
+                required>
+              <hr style="width:75%;">
+            </div>
+            <div class="text-center ">
+              <button class="btn btn-outline-primary text-white">Sign up</button>
+              <hr class="hr-light mb-3 mt-4">
+
+              <div class="inline-ul text-center d-flex justify-content-center">
+                <span class="fa fa-volume-control-phone fa-3x" style="color:white"></span>
+                <ul class="top-contact" style="display:inline-block">
+                  <li style="color:white">USA: +1-786-837-7505</li>
+                </ul>
+
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+<!-- <div class="container">
+  <div class="row">
+ <div class="col-3"></div>
+    <div col-6>
+      <p><q class="text-center" style="color:green;">The best among you is who learns the Holy Quran and teaches to others. (Bukhari)</q></p>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div> -->
+
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4">
+          <h2>What Makes Online Quran Reciting Special?</h2>
+        </div>
+        <div class="col-xs-4"></div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class=" col-6 col-md-4">
+          <span class="fa fa-user-o fa-4x"></span>
+          <h5>One-on-One Classes</h5>
+          <p>It is an excellent live tutoring program that enables kids and adult all over the world to recite Qur’an from home.
+            Lesson times can be arranged to fit into busy family schedules. Top quality software like (Go to meeting) makes
+            lesson very interactive.</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="fa fa-money fa-4x"></span>
+          <h5>Affordable</h5>
+          <p>It is an excellent live tutoring program that enables kids and adult all over the world to recite Qur’an from home.
+            Lesson times can be arranged to fit into busy family schedules. Top quality software like (Go to meeting) makes
+            lesson very interactive.</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="fa fa-clock-o fa-4x"></span>
+          <h5>Flexible Timings</h5>
+          <p>It is an excellent live tutoring program that enables kids and adult all over the world to recite Qur’an from home.
+            Lesson times can be arranged to fit into busy family schedules. Top quality software like (Go to meeting) makes
+            lesson very interactive.</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="fa fa-female fa-4x"></span>
+          <h5>Female Teachers</h5>
+          <p>It is an excellent live tutoring program that enables kids and adult all over the world to recite Qur’an from home.
+            Lesson times can be arranged to fit into busy family schedules. Top quality software like (Go to meeting) makes
+            lesson very interactive.</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="fa fa-language fa-4x "></span>
+          <h5>Multilingual Teachers</h5>
+          <p>It is an excellent live tutoring program that enables kids and adult all over the world to recite Qur’an from home.
+            Lesson times can be arranged to fit into busy family schedules. Top quality software like (Go to meeting) makes
+            lesson very interactive.</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <span class="fa fa-globe fa-4x "></span>
+          <h5>Around World</h5>
+          <p>It is an excellent live tutoring program that enables kids and adult all over the world to recite Qur’an from home.
+            Lesson times can be arranged to fit into busy family schedules. Top quality software like (Go to meeting) makes
+            lesson very interactive.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="parallax">
+          <br>
+          <br>
+          <br>
+          <h3>Testimonials</h3>
+          <br>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="11000" data-pause="hover">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active text-center">
+                <div class="carousel-content">
+                  <div class="row">
+                    <div class="col-2 col-md-3"></div>
+                    <div class="col-8 col-md-6">
+                      <p class="testimonial">
+                        <q>It is very affordable and convenient. My daughter finished the Holy Qur’an and my son on 23 parah.
+                          My children are very happy with their teaching style. They motivate students very much. . God may
+                          help you carry on a good job. </q>
+                      </p>
+                    </div>
+                    <div class="col-2 col-md-3"></div>
+                  </div>
+                  <h6 class="text-center">Mahmood Khan, Birmingham, UK</h6>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <div class="carousel-content">
+                  <div class="row">
+                    <div class="col-2 col-md-3"></div>
+                    <div class="col-8 col-md-6">
+                      <p class="testimonial">
+                        <q>I recommend every visitor of this web site to at least try one week free trial classes. It is useful
+                          for both kids and adult. My kids and I are currently taking classes. I am very thankful to OnlineQuranReciting.com.
+                        </q>
+                      </p>
+                    </div>
+                    <div class="col-2 col-md-3"></div>
+                  </div>
+                  <h6 class="text-center">Mehreen Khan, Toronto, Canada</h6>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <div class="carousel-content">
+                  <div class="row">
+                    <div class="col-1 col-md-2"></div>
+                    <div class="col-10 col-md-8">
+                      <p class="testimonial">
+                        <q>My son who is six years old is on the ninth Parah and my daughter who is eight years old is on eleventh
+                          Parah. They are reading the Holy Qur’an according to rules of Tajweed. In a non Muslim country
+                          we had such a great opportunity it's not less than any blessings of Allah Almighty on us... </q>
+                      </p>
+                    </div>
+                    <div class="col-1 col-md-2"></div>
+                  </div>
+                  <h6 class="text-center">Ashraf Waseem, Franklin Lakes USA</h6>
+                </div>
+              </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- subscribe -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3 class="register">Register</h3>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3 class="join-us">Join Us For One Week Free Trail</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <button class="btn btn-outline-info btn-lg" data-toggle="modal" data-target="#myModal">Join us</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- footer -->
+    <div class="container-fluid bg-light border border-default border-bottom-0 border-right-0 border-left-0 footer">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <ul class="bottom">
+            <li>
+              <a href="index.php">Home</a>
+            </li>
+            <li>
+              <a href="about.php">About us</a>
+            </li>
+            <li>
+              <a href="courses.php">Courses</a>
+            </li>
+            <li>
+              <a href="fee.php">Fee</a>
+            </li>
+            <li>
+              <a href="lectures.php">Lectures</a>
+            </li>
+            <li>
+              <a href="readquran.php">Read Quran</a>
+            </li>
+            <li>
+              <a href="faqs.php">FAQs</a>
+            </li>
+            <li>
+              <a href="contact.php">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-1.5">
+              <a href="#">
+                <span class="fa fa-facebook fa-2x"></span>
+              </a>
+            </div>
+            <div class="col-1.5">
+              <a href="#">
+                <span class="fa fa-youtube fa-2x"></span>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-1.5">
+              <a href="#">
+                <span class="fa fa-twitter fa-2x"></span>
+              </a>
+            </div>
+            <div class="col-1.5">
+              <a href="#">
+                <span class="fa fa-skype fa-2x"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <ul class="contact">
+            <li> <span class="fa fa-phone fa-2x" style="color:black;"></span>USA: +1-786-837-7505</li>
+          </ul>
+          <!-- <img src="images/worldmap.png" class="img-fluid"> -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="padding:0px;">
+          <hr>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-12">
+          <p class="copyright">Copyright
+            <span class="fa fa-copyright"></span> 2018-2019 Online Quran Reciting - All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
