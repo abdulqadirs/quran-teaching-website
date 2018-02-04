@@ -76,7 +76,7 @@
             <span class="sr-only">(current)</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="readquran.php">Read Quran</a>
+            <a class="nav-link" href="readquran.php">Holy Quran</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="faqs.php">FAQs</a>
@@ -123,7 +123,7 @@
                   <a href="lectures.php">Lectures</a>
                 </li>
                 <li>
-                  <a href="readquran.php">Read Quran</a>
+                  <a href="readquran.php">Holy Quran</a>
                 </li>
                 <li>
                     <a href="faqs.php">FAQs</a>
