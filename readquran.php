@@ -22,21 +22,13 @@
     <link rel="stylesheet" href="css/header.css" />
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      $(function () {
-        $(document).scroll(function () {
-          var $nav = $(".fixed-top");
-          var $links = $(".nav-link");
-          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-          $links.toggleClass('color', $(this).scrollTop() > $nav.height());
-        });
-      });
-    </script>
+    <script src="quran.js"></script>
+
   </head>
 
   <body>
-      <!-- <nav class="navbar  navbar-toggleable-md">  -->
-     <div class="container-fluid" >
+    <!-- <nav class="navbar  navbar-toggleable-md">  -->
+    <div class="container-fluid">
       <div class="row">
         <div class="col-xs-4 col-sm-4 col-md-4">
           <img src="images/logo.png" class="img-fluid" width="250px" height="160px">
@@ -44,19 +36,22 @@
         <div class="col-xs-1 col-sm-4 col-md-4"></div>
         <div class="col-xs-4 col-sm-4 col-md-4">
           <ul class="top-contact" style="margin-top:20px">
-            <b><li style="color:black">  <span class="fa fa-registered fa-lg "></span>US Florida</li></b>
+            <b>
+              <li style="color:black">
+                <span class="fa fa-registered fa-lg "></span>US Florida</li>
+            </b>
             <li style="color:black">G10000064235</li>
           </ul>
         </div>
       </div>
     </div>
-     <!-- </nav>  -->
-     <nav class="navbar navbar-toggleable-md navigation-bar  navbar-inverse">
+    <!-- </nav>  -->
+    <nav class="navbar navbar-toggleable-md navigation-bar  navbar-inverse">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="fa fa-bars"></span>
-      </button> 
-      <h1  class="navbar-brand"></h1>
+      </button>
+      <h1 class="navbar-brand"></h1>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item ">
@@ -69,13 +64,13 @@
             <a class="nav-link" href="courses.php">Courses</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="fee.php">Fee</a>
-            </li>
+            <a class="nav-link" href="fee.php">Fee</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="lectures.php">Lectures</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="readquran.php">Read Quran</a>
+            <a class="nav-link active" href="readquran.php">Holy Quran</a>
             <span class="sr-only">(current)</span>
           </li>
           <li class="nav-item">
@@ -88,59 +83,241 @@
         </ul>
       </div>
     </nav>
-    
+
     <hr style="margin:0px;padding:0px;">
     <div style="height:240px;background-color:rgba(66, 4, 236, 0.92); margin:0px;">
-     <div class="container h-100">
-       <div class="row h-100 justify-content-center align-items-center">
-         <ul style="color:white">
-           <li><h1>Holy Quran</h1></li>
-           <li><a href="#quran" style="color:white"><span class="fa fa-angle-double-down fa-3x pl-5 ml-5"></span></a></li>
-         </ul>
-       </div>
-     </div>
-   </div>
-   <br>
-
-  <div class="container-fluid" id="quran">
-    <div class="row">
-      <div class="col-12">
-        <object data="small-stuff.pdf" type="application/pdf" style="height:842px; width:100%"></object>
+      <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+          <ul style="color:white">
+            <li>
+              <h1>Holy Quran</h1>
+            </li>
+            <li>
+              <a href="#quran-chapters" style="color:white">
+                <span class="fa fa-angle-double-down fa-3x pl-5 ml-5"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  <br>
-  
+    <br>
+    <br>
+    <div class="container" id="quran-chapters">
+      <div class="row">
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para1">
+            <span class="fa fa-book fa-lg"></span>  Chapter 01
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para2">
+            <span class="fa fa-book fa-lg"></span> Chapter 02
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para3">
+            <span class="fa fa-book fa-lg"></span> Chapter 03
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para4">
+            <span class="fa fa-book fa-lg"></span> Chapter 04
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para5">
+            <span class="fa fa-book fa-lg"></span> Chapter 05
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para6">
+            <span class="fa fa-book fa-lg"></span> Chapter 06
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para7">
+            <span class="fa fa-book fa-lg"></span> Chapter 07
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para8">
+            <span class="fa fa-book fa-lg"></span> Chapter 08
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para9">
+            <span class="fa fa-book fa-lg"></span> Chapter 09
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para10">
+            <span class="fa fa-book fa-lg"></span> Chapter 10
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para11">
+            <span class="fa fa-book fa-lg"></span> Chapter 11
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para12">
+            <span class="fa fa-book fa-lg"></span> Chapter 12
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para13">
+            <span class="fa fa-book fa-lg"></span> Chapter 13
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para14">
+            <span class="fa fa-book fa-lg"></span> Chapter 14
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para15">
+            <span class="fa fa-book fa-lg"></span> Chapter 15
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para16">
+            <span class="fa fa-book fa-lg"></span> Chapter 16
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para17">
+            <span class="fa fa-book fa-lg"></span> Chapter 17
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para18">
+            <span class="fa fa-book fa-lg"></span> Chapter 18
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para19">
+            <span class="fa fa-book fa-lg"></span> Chapter 19
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para20">
+            <span class="fa fa-book fa-lg"></span> Chapter 20
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para21">
+            <span class="fa fa-book fa-lg"></span> Chapter 21
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para22">
+            <span class="fa fa-book fa-lg"></span> Chapter 22
+            <a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para23">
+            <span class="fa fa-book fa-lg"></span> Chapter 23
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para24">
+            <span class="fa fa-book fa-lg"></span> Chapter 24
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para25">
+            <span class="fa fa-book fa-lg"></span> Chapter 25
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para26">
+            <span class="fa fa-book fa-lg"></span> Chapter 26
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para27">
+            <span class="fa fa-book fa-lg"></span> Chapter 27
+            </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para28">
+            <span class="fa fa-book fa-lg"></span> Chapter 28
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para29">
+            <span class="fa fa-book fa-lg"></span> Chapter 29
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="holyquran.php" class="chapter" id="para30">
+            <span class="fa fa-book fa-lg"></span> Chapter 30
+          </a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+
     <!-- footer -->
     <div class="container-fluid bg-light border border-default border-bottom-0 border-right-0 border-left-0 footer">
       <div class="row">
         <div class="col-12 col-md-4">
-            <ul class="bottom">
-                <li>
-                  <a href="index.php">Home</a>
-                </li>
-                <li>
-                  <a href="about.php">About us</a>
-                </li>
-                <li>
-                  <a href="courses.php">Courses</a>
-                </li>
-                <li>
-                    <a href="fee.php">Fee</a>
-                  </li>
-                <li>
-                  <a href="lectures.php">Lectures</a>
-                </li>
-                <li>
-                  <a href="readquran.php">Read Quran</a>
-                </li>
-                <li>
-                    <a href="faqs.php">FAQs</a>
-                  </li>
-                <li>
-                  <a href="contact.php">Contact us</a>
-                </li>
-              </ul>
+          <ul class="bottom">
+            <li>
+              <a href="index.php">Home</a>
+            </li>
+            <li>
+              <a href="about.php">About us</a>
+            </li>
+            <li>
+              <a href="courses.php">Courses</a>
+            </li>
+            <li>
+              <a href="fee.php">Fee</a>
+            </li>
+            <li>
+              <a href="lectures.php">Lectures</a>
+            </li>
+            <li>
+              <a href="readquran.php">Holy Quran</a>
+            </li>
+            <li>
+              <a href="faqs.php">FAQs</a>
+            </li>
+            <li>
+              <a href="contact.php">Contact us</a>
+            </li>
+          </ul>
         </div>
         <div class="col-12 col-md-4">
           <div class="row">
@@ -172,7 +349,8 @@
         </div>
         <div class="col-12 col-md-4">
           <ul class="contact">
-            <li> <span class="fa fa-phone fa-2x" style="color:black;"></span>USA: +1-786-837-7505</li>
+            <li>
+              <span class="fa fa-phone fa-2x" style="color:black;"></span>USA: +1-786-837-7505</li>
           </ul>
           <!-- <img src="images/worldmap.png" class="img-fluid"> -->
         </div>
