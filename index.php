@@ -22,16 +22,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      $(function () {
-        $(document).scroll(function () {
-          var $nav = $(".fixed-top");
-          var $links = $(".nav-link");
-          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-          $links.toggleClass('color', $(this).scrollTop() > $nav.height());
-        });
-      });
-    </script>
+  
   </head>
 
   <body>
@@ -76,7 +67,7 @@
             <a class="nav-link" href="lectures.php">Lectures</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="readquran.php">Read Quran</a>
+            <a class="nav-link" href="readquran.php">Holy Quran</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="faqs.php">FAQs</a>
@@ -215,8 +206,8 @@
             lesson very interactive.</p>
         </div>
         <div class="col-6 col-md-4">
-          <span class="fa fa-female fa-4x"></span>
-          <h5>Female Teachers</h5>
+          <span class="fa fa-headphones fa-4x"></span>
+          <h5>Interactive Classes</h5>
           <p>It is an excellent live tutoring program that enables kids and adult all over the world to recite Qur’an from home.
             Lesson times can be arranged to fit into busy family schedules. Top quality software like (Go to meeting) makes
             lesson very interactive.</p>
@@ -334,7 +325,7 @@
       </div>
       <div class="row">
         <div class="col-12 text-center">
-          <button class="btn btn-outline-info btn-lg" data-toggle="modal" data-target="#myModal">Join us</button>
+          <button class="btn btn-outline-primary btn-lg" data-toggle="modal" data-target="#myModal">Join us</button>
         </div>
       </div>
     </div>
@@ -362,7 +353,7 @@
               <a href="lectures.php">Lectures</a>
             </li>
             <li>
-              <a href="readquran.php">Read Quran</a>
+              <a href="readquran.php">Holy Quran</a>
             </li>
             <li>
               <a href="faqs.php">FAQs</a>
