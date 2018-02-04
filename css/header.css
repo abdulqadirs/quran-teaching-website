@@ -91,7 +91,7 @@ body.modal-open[style] {
     color:black;
 }
 
-.fa-female,.fa-clock-o,.fa-money,.fa-user-o,.fa-language,.fa-globe{
+.fa-headphones,.fa-clock-o,.fa-money,.fa-user-o,.fa-language,.fa-globe{
     /* color:#0275d8;
     color: #00aced; */
     color: rgba(66, 4, 236, 0.92);
@@ -232,4 +232,16 @@ font-style: italic;
 
 .question{
     cursor: pointer;
+}
+
+/* read quran */
+#quran-chapters .row{
+    margin-bottom: 20px;
+}
+.fa-book {
+    color:#2a7ae2;
+}
+/* holyquran.php */
+.fa-arrow-circle-o-left,.fa-arrow-circle-o-right{
+    cursor:pointer;
 }
