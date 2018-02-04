@@ -22,16 +22,6 @@
     <link rel="stylesheet" href="css/header.css" />
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      $(function () {
-        $(document).scroll(function () {
-          var $nav = $(".fixed-top");
-          var $links = $(".nav-link");
-          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-          $links.toggleClass('color', $(this).scrollTop() > $nav.height());
-        });
-      });
-    </script>
   </head>
 
   <body>
@@ -78,7 +68,7 @@
             <a class="nav-link" href="lectures.php">Lectures</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="readquran.php">Read Quran</a>
+            <a class="nav-link" href="readquran.php">Holy Quran</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="faqs.php">FAQs</a>
@@ -175,7 +165,7 @@
               <a href="lectures.php">Lectures</a>
             </li>
             <li>
-              <a href="readquran.php">Read Quran</a>
+              <a href="readquran.php">Holy Quran</a>
             </li>
             <li>
               <a href="faqs.php">FAQs</a>
