@@ -1,4 +1,3 @@
-
 <html>
 
   <head>
@@ -73,13 +72,13 @@
             <a class="nav-link" href="courses.php">Courses</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="fee.php">Fee</a>
-            </li>
+            <a class="nav-link" href="fee.php">Fee</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="lectures.php">Lectures</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="readquran.php">Read Quran</a>
+            <a class="nav-link" href="readquran.php">Holy Quran</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="faqs.php">FAQs</a>
@@ -90,7 +89,7 @@
 
         </ul>
       </div>
-    </nav>
+     </nav>
 
     <hr style="margin:0px;padding:0px;">
     <div style="height:240px;background-color:rgba(66, 4, 236, 0.92); margin:0px;">
@@ -111,7 +110,7 @@
     </div>
     <br>
     <br>
-    <div class="container bg-faded" id="aboutus" style="padding-top:20px;padding-bottom:20px;">
+    <div class="container" id="aboutus" style="padding-top:20px;padding-bottom:20px;">
       <div class="row">
         <div class="col-12">
           <p> Online Quran Reciting is a world's best Quran tutoring academy registered in Florida, USA. We provide one to one
@@ -181,7 +180,7 @@
               <a href="about.php">About us</a>
             </li>
             <li>
-              <a href="courses.php">Courses</a>
+                  <a href="courses.php">Courses</a>
             </li>
             <li>
               <a href="fee.php">Fee</a>
@@ -190,7 +189,7 @@
               <a href="lectures.php">Lectures</a>
             </li>
             <li>
-              <a href="readquran.php">Read Quran</a>
+              <a href="readquran.php">Holy Quran</a>
             </li>
             <li>
               <a href="faqs.php">FAQs</a>
