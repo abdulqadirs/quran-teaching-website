@@ -52,7 +52,7 @@
           </ul>
         </div>
       </div>
-    </div>
+        </div> 
     <!-- </nav>  -->
     <nav class="navbar navbar-toggleable-md navigation-bar  navbar-inverse">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -79,7 +79,7 @@
             <a class="nav-link" href="lectures.php">Lectures</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="readquran.php">Read Quran</a>
+            <a class="nav-link" href="readquran.php">Holy Quran</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="faqs.php">FAQs</a>
@@ -229,7 +229,7 @@
               <a href="lectures.php">Lectures</a>
             </li>
             <li>
-              <a href="readquran.php">Read Quran</a>
+              <a href="readquran.php">Holy Quran</a>
             </li>
             <li>
               <a href="faqs.php">FAQs</a>
