@@ -1,7 +1,8 @@
+<!doctype html>
 <html>
 
   <head>
-    <title>About us</title>
+    <title>FAQs</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto+Slab" rel="stylesheet">
@@ -21,19 +22,13 @@
     <link rel="stylesheet" href="css/header.css" />
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      $(function () {
-        $(document).scroll(function () {
-          var $nav = $(".fixed-top");
-          var $links = $(".nav-link");
-          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-          $links.toggleClass('color', $(this).scrollTop() > $nav.height());
-        });
-      });
-    </script>
+    <!-- faqs.js -->
+    <script src="faqs.js"></script>
   </head>
 
   <body>
+
+    </head>
     <!-- <nav class="navbar  navbar-toggleable-md">  -->
     <div class="container-fluid">
       <div class="row">
@@ -62,34 +57,34 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item ">
-            <a class="nav-link" href="index.php">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="about.php">About us</a>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fee.html">Fee</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lectures.html">Lectures</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="readquran.html">Holy Quran</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="faqs.html">FAQs</a>
             <span class="sr-only">(current)</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="courses.php">Courses</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="fee.php">Fee</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="lectures.php">Lectures</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="readquran.php">Holy Quran</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="faqs.php">FAQs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.php">Contact us</a>
+            <a class="nav-link" href="contact.html">Contact us</a>
           </li>
 
         </ul>
       </div>
-     </nav>
+    </nav>
 
     <hr style="margin:0px;padding:0px;">
     <div style="height:240px;background-color:rgba(66, 4, 236, 0.92); margin:0px;">
@@ -97,11 +92,11 @@
         <div class="row h-100 justify-content-center align-items-center">
           <ul style="color:white">
             <li>
-              <h1>About Us</h1>
+              <h1>FAQs</h1>
             </li>
             <li>
-              <a href="#aboutus">
-                <span class="fa fa-angle-double-down fa-3x pl-5 ml-4"></span>
+              <a href="#faqs">
+                <span class="fa fa-angle-double-down fa-3x pl-4 ml-2"></span>
               </a>
             </li>
           </ul>
@@ -110,92 +105,86 @@
     </div>
     <br>
     <br>
-    <div class="container" id="aboutus" style="padding-top:20px;padding-bottom:20px;">
+
+    <div class="container" id="faqs">
       <div class="row">
-        <div class="col-12">
-          <p> Online Quran Reciting is a world's best Quran tutoring academy registered in Florida, USA. We provide one to one
-            Quran learning classes with Tajweed, and understanding. Good thing is that you can try Quran teachers’ service
-            and get to know their approach and staff without paying anything initially and continue if you are satisfied.
-            It is an excellent live tutoring program that enables kids and adult all over the world to recite Qur’an from
-            home. Lesson times can be arranged to fit into busy family schedules. Top quality software like (Skype) makes
-            lesson very interactive.</p>
-          <h4>Our Objective</h4>
-          <p>Our Objective is to provide individuals to learn the Islamic teachings online through established institutions.
-            So, that the individual acquire high Islamic morals, leading them to aspire for paradise by pleasing Allah. </p>
-          <h4>Our Teachers</h4>
-          <p>Our teachers have experience of teaching the Holy Qur’an in English and Urdu speaking students. Our teachers work
-            in full time base. Our expert tutors have extensive education and experience in teaching the Holy Qur'an while
-            you are able to sit at home and benefit from it directly. Our tutors pay attention to the students need and the
-            classes most beneficial. We are currently teaching in several countries including USA, Canada and UK. Our students
-            rang from ages 4 to 70 years, Moreover Our teachers have:</p>
-          <ul class="bullets">
-            <li>Memorization of entire Holy Qur’an </li>
-            <li>Well aware of Tajweed rules</li>
-            <li>Islamic Degree</li>
-            <li>Have command on English and Urdu languages</li>
-            <li>Professional training from us.</li>
-          </ul>
-          <h4>Our Approach</h4>
-          <p>Our approach is focused and dynamic. We use a number of methods to provide you with an effective, fast and reliable
-            Quran Reciting program. Our program approach focuses on the following:</p>
-          <ul class="bullets">
-            <li>
-              Students learn at different speeds, some students require much greater support and/or time in completing tasks. Hence, our
-              dedicated tutors accommodate their teaching styles according to the students learning.
-            </li>
-            <li>
-              Our well trained tutors use different Interactions to match different Purposes and Outcomes. Such as; informing, describing,
-              explaining, demonstrating, listening and questioning.
-            </li>
-          </ul>
-          <h4>Why you would go for Online Quran Reciting?</h4>
-          <ul class="bullets">
-            <li> Online Quran Reciting helps in easy learning of Quran though professionals guiding you in an effective manner.</li>
-            <li>You want your child to excel in this life and hereafter.</li>
-            <li>You can't drive kids to the mosque. </li>
-            <li>You are looking for quality Quran recitation.</li>
-            <li>You can't find an Expert at home.</li>
-            <li>You want to learn the Qur'an from Arabic Alphabets.</li>
-            <li>You want to do memorize the Holy Quran.</li>
-            <li>You are not aware of the tajweed rules.</li>
-          </ul>
-          <h4>Disclaimer</h4>
-          <p> Online Quran Reciting is non-partition organization; we are not part of any group, Islamic organization or mosques.
-            We welcome all students interested in learning the Holy Qur’an. It's the perfect way for teaching Quran, religion
-            & basic Islamic teachings.</p>
+        <div class="col-12 col-md-6">
+          <p class="fa fa-lock question">
+            <b>Do I need Credit card information for Trial classes?</b>
+            <hr>
+          </p>
+          <p class="answer">No, you are not required to give credit card information for trial lessons.</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="fa fa-lock question">
+            <b> Which payment methods do you accept?</b>
+            <hr>
+          </p>
+          <p class="answer">We accept PayPal, Secure online credit card and wire Transfer.</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="fa fa-lock question">
+            <b>Is there any offline payment method?</b>
+            <hr>
+          </p>
+          <p class="answer">Yes, you can make payment with Bank transfer, Check, Money Order and Western Union.</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="fa fa-lock question">
+            <b>Do I have to give credit card information to any one?</b>
+            <hr>
+          </p>
+          <p class="answer">No. You are not required to give credit card information to anyone. You will make payment online in very secure
+            environment.
+          </p>
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="fa fa-lock question">
+            <b>Is there any discount for family members?</b>
+            <hr>
+          </p>
+          <p class="answer">Yes, there is discount for two or more than two members of the family.</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="fa fa-lock question">
+            <b>What if I want to cancel my classes?</b>
+            <hr>
+          </p>
+          <p class="answer">You may cancel your subscription any time by giving 1 months notice.</p>
         </div>
       </div>
     </div>
     <br>
     <br>
+  
     <!-- footer -->
     <div class="container-fluid bg-light border border-default border-bottom-0 border-right-0 border-left-0 footer">
       <div class="row">
         <div class="col-12 col-md-4">
           <ul class="bottom">
             <li>
-              <a href="index.php">Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="about.php">About us</a>
+              <a href="about.html">About us</a>
             </li>
             <li>
-                  <a href="courses.php">Courses</a>
+              <a href="courses.html">Courses</a>
             </li>
             <li>
-              <a href="fee.php">Fee</a>
+              <a href="fee.html">Fee</a>
             </li>
             <li>
-              <a href="lectures.php">Lectures</a>
+              <a href="lectures.html">Lectures</a>
             </li>
             <li>
-              <a href="readquran.php">Holy Quran</a>
+              <a href="readquran.html">Holy Quran</a>
             </li>
             <li>
-              <a href="faqs.php">FAQs</a>
+              <a href="faqs.html">FAQs</a>
             </li>
             <li>
-              <a href="contact.php">Contact us</a>
+              <a href="contact.html">Contact us</a>
             </li>
           </ul>
         </div>
